@@ -1,6 +1,6 @@
 // this will start an executor on a Jenkins agent with the docker label
 pipeline {
-  agent any
+  agent { label 'docker' }
   stages {
     stage('build base image') {
       steps {
